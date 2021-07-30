@@ -17,7 +17,10 @@ const useStyles = makeStyles((theme) => ({
     width: "160px",
   },
   typoPlacement: {
-    float: "right",
+    margin: "auto",
+    [theme.breakpoints.up("md")]: {
+      float: "right",
+    },
   },
 }));
 
