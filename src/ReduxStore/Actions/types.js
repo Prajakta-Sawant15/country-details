@@ -1,0 +1,5 @@
+export const COUNTRY_DATA = 'COUNTRY_DATA';
+export const SELECTED_COUNTRY = 'SELECTED_COUNTRY';
+export const SET_SNACKBAR = 'SET_SNACKBAR';
+export const ADD_NEW_COUNTRY = 'ADD_NEW_COUNTRY';
+export const BUSY_IND = 'BUSY_IND';
