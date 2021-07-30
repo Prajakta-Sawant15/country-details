@@ -246,18 +246,13 @@ function NewCountryDialog(props) {
             error={errorContinent}
           >
             {countryArray.length > 0 ? (
-              countryArray
-                .filter((ele) => ele.continent)
-                .map((countryName) => {
-                  return (
-                    <MenuItem
-                      value={countryName.continent}
-                      key={countryName.id}
-                    >
-                      {countryName.continent}
-                    </MenuItem>
-                  );
-                })
+              countryArray.map((countryName) => {
+                return (
+                  <MenuItem value={countryName} key={countryName}>
+                    {countryName}
+                  </MenuItem>
+                );
+              })
             ) : (
               <MenuItem>No Data Found</MenuItem>
             )}
